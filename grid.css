@@ -1,0 +1,43 @@
+.outerGridContainer {
+  margin: auto;
+  width: 90%;
+  max-width: 1200px;
+}
+.gridContainer {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  background-color: white;
+}
+
+.gridItem {
+  background-color: lightyellow;
+  text-align: center;
+  max-height: 400px;
+  max-width: 400px;
+  overflow: scroll;
+}
+
+.gridItemStretch {
+  grid-column: 2;
+}
+
+.puppy {
+  margin: auto;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .gridContainer {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .gridContainer {
+    display: grid;
+    grid-template-columns: auto;
+  }
+}
